@@ -25,7 +25,7 @@ SECRET_KEY = '$&a5&@1=slxb9s_(2el*i6h_gjwj@dg)82)%ekt%r_#48xv3-&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sleepy-stream-99089.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
