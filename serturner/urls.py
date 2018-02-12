@@ -18,12 +18,13 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import BaseView,LoginView
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index',BaseView.as_view(),name='index'),
-    path('login',LoginView.as_view(),name='login'),
+    path('',BaseView.as_view(),name='index'),
+    path('login',auth_views.login,{'template_name': 'login.html'}),
 ]
 
 

@@ -11,4 +11,4 @@ class BaseView(View):
 class LoginView(View):
 
     def get(self,request,*args, **kwargs):
-        return render(request,"page_user_login_1.html",{})
+        return render(request,"login.html",{})
